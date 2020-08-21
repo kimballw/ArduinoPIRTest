@@ -23,10 +23,10 @@ void setup() {
 }
 
 void loop() {
-  val1 = digitalRead(PIR1);
-  val2 = digitalRead(PIR2);
-  val3 = digitalRead(PIR3);
-  val4 = digitalRead(PIR4);
+  int val1 = digitalRead(PIR1);
+  int val2 = digitalRead(PIR2);
+  int val3 = digitalRead(PIR3);
+  int val4 = digitalRead(PIR4);
   if (val1 == HIGH) {
     Serial.println("Motion detected on sensor 1");
   } else if (val2 == HIGH) {
